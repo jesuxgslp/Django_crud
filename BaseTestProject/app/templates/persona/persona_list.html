@@ -1,0 +1,33 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Lista de Personas</h2>
+<h3>Esta es una lista de personas</h3>
+
+<a class="btn btn-success" href="{% url 'persona-create'%}">Agregar</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Fecha Nacimiento</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for persona in object_list %}
+        <tr>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.apellido}}</td>
+            <td>{{persona.fecha_nacimiento}}</td>
+            <td><a class="btn btn-primary" href="{% url 'persona-update' persona.pk%}">Editar</a></td>
+            <td><a class="btn btn-danger" href="{% url 'persona-delete' persona.pk%}">Borrar</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+    
+
+{% endblock %}

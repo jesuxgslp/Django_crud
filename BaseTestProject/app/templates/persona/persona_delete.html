@@ -1,0 +1,12 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Borrar persona</h2>
+
+<form method="post">{% csrf_token %}
+    <p>¿Estas seguro que quieres borrar a "{{ object }}"?</p>
+    <input type="submit" value="Confirmar">
+</form>
+
+{% endblock %}
