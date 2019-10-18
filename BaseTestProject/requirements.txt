@@ -5,3 +5,4 @@ pytest-cov
 pytest-asyncio
 pytest-trio
 pytest-tornasync
+selenium

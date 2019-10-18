@@ -16,5 +16,6 @@ To-Do
 
 
 Links que use:
-https://medium.com/@harshvb7/using-pytest-to-write-tests-in-django-6783674c55b8
+- Para pytest https://medium.com/@harshvb7/using-pytest-to-write-tests-in-django-6783674c55b8
+- Para Selenium https://medium.com/@unary/django-views-automated-testing-with-selenium-d9df95bdc926
 
