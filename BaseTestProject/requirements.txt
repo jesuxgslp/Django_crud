@@ -2,3 +2,6 @@ Django==2.0
 pytest
 pytest-django
 pytest-cov
+pytest-asyncio
+pytest-trio
+pytest-tornasync
