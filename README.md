@@ -13,3 +13,8 @@ To-Do
 3) Hacer pruebas Front-End con selenium
 4) Hacer una rama con su nombre
 5) Hacer un pull request al proyecto
+
+
+Links que use:
+https://medium.com/@harshvb7/using-pytest-to-write-tests-in-django-6783674c55b8
+
