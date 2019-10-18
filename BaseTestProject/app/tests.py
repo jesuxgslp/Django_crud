@@ -5,6 +5,7 @@ when you run "manage.py test".
 
 import django
 from django.test import TestCase
+import pytest
 
 # TODO: Configure your database in settings.py and sync before running tests.
 

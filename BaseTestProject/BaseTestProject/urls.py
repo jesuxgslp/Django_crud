@@ -23,8 +23,10 @@ urlpatterns = [
     url(r'^persona/update/(?P<pk>\d+)/$', app.views.PersonaEditView.as_view(), name='persona-update'),
 
     url(r'^about', app.views.about, name='about'),
+    url(r'^contact', app.views.contact, name='contact'),
+    url(r'^app/home', app.views.home, name='home'),
     url(r'^login/$',
-        django.contrib.auth.views.login,
+        django.contrib.auth.views.LoginView.as_view,
         {
             'template_name': 'app/login.html',
             'authentication_form': app.forms.BootstrapAuthenticationForm,
@@ -36,7 +38,7 @@ urlpatterns = [
         },
         name='login'),
     url(r'^logout$',
-        django.contrib.auth.views.logout,
+        django.contrib.auth.views.LogoutView.as_view,
         {
             'next_page': '/',
         },
