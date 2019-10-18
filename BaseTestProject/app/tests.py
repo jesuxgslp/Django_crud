@@ -15,27 +15,21 @@ class AccountTestCase(LiveServerTestCase):
     def test_register(self):
         selenium = self.selenium
         #Opening the link we want to test
-        selenium.get('http://127.0.0.1:8000/accounts/register/')
+        selenium.get('http://127.0.0.1:8080/persona/create/')
         #find the form element
-        first_name = selenium.find_element_by_id('id_first_name')
-        last_name = selenium.find_element_by_id('id_last_name')
-        username = selenium.find_element_by_id('id_username')
-        email = selenium.find_element_by_id('id_email')
-        password1 = selenium.find_element_by_id('id_password1')
-        password2 = selenium.find_element_by_id('id_password2')
+        first_name = selenium.find_element_by_id('id_nombre')
+        last_name = selenium.find_element_by_id('id_apellido')
+        dob = selenium.find_element_by_id('id_fecha_nacimiento')
 
-        submit = selenium.find_element_by_name('register')
+        submit = selenium.find_element_by_name('Guardar')
 
         #Fill the form with data
-        first_name.send_keys('Yusuf')
-        last_name.send_keys('Unary')
-        username.send_keys('unary')
-        email.send_keys('yusuf@qawba.com')
-        password1.send_keys('123456')
-        password2.send_keys('123456')
+        first_name.send_keys('Jesus')
+        last_name.send_keys('Reyes')
+        dob.send_keys('12/01/2019')
 
         #submitting the form
         submit.send_keys(Keys.RETURN)
 
         #check the returned result
-        assert 'Check your email' in selenium.page_source
+        assert 'Lista de Personas' in selenium.page_source
