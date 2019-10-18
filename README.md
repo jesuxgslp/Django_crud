@@ -8,6 +8,8 @@ El proyecto ya trae la base de datos inicializada. No hay necesidad de nada más
 
 To-Do 
 
-1) Hacer unittest con pytest 
-2) Hacer pruebas Front-End con selenium
-
+1) Clonar este projecto
+2) Hacer unittest con pytest 
+3) Hacer pruebas Front-End con selenium
+4) Hacer una rama con su nombre
+5) Hacer un pull request al proyecto
