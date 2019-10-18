@@ -3,6 +3,7 @@ This file demonstrates writing tests using the unittest module. These will pass
 when you run "manage.py test".
 """
 
+import pytest
 import django
 from django.test import TestCase
 
@@ -23,7 +24,7 @@ class ViewTest(TestCase):
         response = self.client.get('/')
         self.assertContains(response, 'Home Page', 1, 200)
 
-    def test_contact(self):
+    def test_contact(self): 
         """Tests the contact page."""
         response = self.client.get('/contact')
         self.assertContains(response, 'Contact', 3, 200)
