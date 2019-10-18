@@ -3,3 +3,5 @@
 /BaseTestProject/obj
 /BaseTestProject/BaseTestProject.pyproj.userenvironment/
 environment/
+BaseTestProject/__pycache__/test_settings.cpython-36-pytest-5.2.1.pyc
+htmlcov/
