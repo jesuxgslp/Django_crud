@@ -18,4 +18,4 @@ To-Do
 Links que use:
 - Para pytest https://medium.com/@harshvb7/using-pytest-to-write-tests-in-django-6783674c55b8
 - Para Selenium https://medium.com/@unary/django-views-automated-testing-with-selenium-d9df95bdc926
-
+     Se necesita algo que se llama geckodirver en el directorio bin https://stackoverflow.com/questions/40302006/no-such-file-or-directory-geckodriver-for-a-python-simple-selenium-applicatio
